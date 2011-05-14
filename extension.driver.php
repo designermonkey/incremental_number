@@ -1,33 +1,33 @@
 <?php
 
-	Class extension_numberfield extends Extension{
-	
+	Class extension_order_number extends Extension{
+
 		public function about(){
-			return array('name' => 'Field: Number',
+			return array('name' => 'Field: Order Number',
 						 'version' => '1.4',
 						 'release-date' => '2008-05-14',
-						 'author' => array('name' => 'Symphony Team',
-										   'website' => 'http://www.symphony21.com',
-										   'email' => 'team@symphony21.com')
+						 'author' => array('name' => 'John Porter',
+										   'email' => 'contact@designermonkey.co.uk')
 				 		);
 		}
-		
+
 		public function uninstall(){
-			$this->_Parent->Database->query("DROP TABLE `tbl_fields_number`");
+			Symphony::Database()->query("DROP TABLE `tbl_fields_order_number`");
 		}
 
 
 		public function install(){
 
-			return $this->_Parent->Database->query("CREATE TABLE `tbl_fields_number` (
+			return Symphony::Database()->query("CREATE TABLE `tbl_fields_order_number` (
 			  `id` int(11) unsigned NOT NULL auto_increment,
 			  `field_id` int(11) unsigned NOT NULL,
+			  `start_number` int(11) unsigned NOT NULL,
 			  PRIMARY KEY  (`id`),
 			  UNIQUE KEY `field_id` (`field_id`)
 			) TYPE=MyISAM");
 
 		}
-			
+
 	}
 
 ?>
