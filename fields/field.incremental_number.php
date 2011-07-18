@@ -1,10 +1,10 @@
 <?php
 
-	Class field_order_number extends Field{
+	Class field_incremental_number extends Field{
 
 		function __construct(&$parent){
 			parent::__construct($parent);
-			$this->_name = 'Order Number';
+			$this->_name = 'Incremental Number';
 			$this->_required = true;
 			$this->set('required', 'yes');
 		}
