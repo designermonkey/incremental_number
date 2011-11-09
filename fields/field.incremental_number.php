@@ -1,6 +1,6 @@
 <?php
 
-	Class field_incremental_number extends Field{
+	Class fieldincremental_number extends Field{
 
 		function __construct(&$parent){
 			parent::__construct($parent);
