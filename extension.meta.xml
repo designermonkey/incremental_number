@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="incremental_number">
+	<name>Incremental Number Field</name>
+	<description>Increment a number per entry in a section</description>
+	<repo type="github">https://github.com/designermonkey/incremental_number</repo>
+	<url type="discuss">http://symphony-cms.com/discuss/thread/81151/</url>
+	<types>
+		<type>Field Types</type>
+	</types>
+	<authors>
+		<author>
+			<name github="designermonkey" symphony="designermonkey">John Porter</name>
+			<website>http://designermonkey.co.uk</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.0.0" date="2011-11-28" min="2.2" />
+	</releases>
+</extension>
