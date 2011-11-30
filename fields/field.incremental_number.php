@@ -53,6 +53,13 @@
 			else $wrapper->appendChild($label);
 		}
 
+		public function processRawFieldData($data, &$status, $simulate=false, $entry_id=null) {
+
+			if (!$data) $data = $this->getNewNumber();
+
+			return parent::processRawFieldData($data, &$status, $simulate, $entry_id);
+		}
+
 		public function getNewNumber()
 		{
 			$last_num = Symphony::Database()->fetch("
