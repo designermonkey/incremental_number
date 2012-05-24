@@ -1,20 +1,15 @@
-
 Incremental Number Field
-------------------------------------
+======================
 
-Version: 1.0
-Author: John Porter (john.porter@designermonkey.co.uk)
-Build Date: 18th July 2011
-Requirements: Symphony 2.2
+## 1 About ##
+
+A field that automatically increments it's value by one for each new entry.
 
 
-[INSTALLATION]
-
+## 1 Installation ##
+ 
 1. Upload the 'incremental_number' folder in this archive to your Symphony 'extensions' folder.
 
 2. Enable it by selecting the "Field: Incremental Number", choose Enable from the with-selected menu, then click Apply.
 
 3. You can now add the "Incremental Number" field to your sections.
-
-
-[CHANGES]
