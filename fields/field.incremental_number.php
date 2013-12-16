@@ -56,7 +56,7 @@
 		public function processRawFieldData($data, &$status, $message, $simulate = false, $entry_id = null){
 			if( !$data ) $data = $this->getNewNumber();
 
-			return parent::processRawFieldData($data, &$status, $message, $simulate, $entry_id);
+			return parent::processRawFieldData($data, $status, $message, $simulate, $entry_id);
 		}
 
 		public function getNewNumber(){
