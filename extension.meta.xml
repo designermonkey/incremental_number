@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<extension id="incremental_number" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+<extension id="incremental_number" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
 	<name>Incremental Number Field</name>
-
-	<description>Increment a number per entry in a section</description>
-
+	<description>A field that automatically increments it's value by one for each new entry in a section.</description>
 	<repo type="github">https://github.com/designermonkey/incremental_number</repo>
-
-	<url type="discuss">http://symphony-cms.com/discuss/thread/81151/</url>
-
+	<url type="issues">https://github.com/designermonkey/incremental_number/issues</url>
+	<url type="discuss">http://www.getsymphony.com/discuss/thread/81151/</url>
 	<types>
-		<type>Field Types</type>
+		<type>Field</type>
 	</types>
-
 	<authors>
 		<author>
 			<name github="designermonkey" symphony="designermonkey">John Porter</name>
 			<website>http://designermonkey.co.uk</website>
 		</author>
 		<author>
-			<name github="vlad-ghita" symphony="vladG">Vlad Ghita</name>
-			<email>vlad_micutul@yahoo.com</email>
-			<website>http://www.xanderadvertising.com</website>
+			<name github="twiro" symphony="roman">Roman Klein</name>
+			<website>https://github.com/twiro</website>
 		</author>
 	</authors>
-
 	<releases>
-		<release version="1.1.0" date="2012-05-24" min="2.3"><![CDATA[
-			* Cleanup & Symphony 2.3 compatibility.
-		]]></release>
-
-		<release version="1.0.0" date="2011-11-28" min="2.2" />
+		<release version="1.2.0" date="2018-01-29" min="2.4.0" max="2.x.x">
+			- Code cleanup &amp; reformatting
+			- Improved Readme &amp; fixed Meta
+			- PHP 7.0 compatibility
+			- Symphony 2.6 &amp; 2.7 compatibility [#8](https://github.com/designermonkey/incremental_number/issues/8)
+			- Added field settings validation [#9](https://github.com/designermonkey/incremental_number/issues/9)
+		</release>
+		<release version="1.1.0" date="2012-05-24" min="2.3.0" max="2.6.x">
+			- Cleanup &amp; Symphony 2.3 compatibility.
+		</release>
+		<release version="1.0.0" date="2011-11-28" min="2.2.0" max="2.2.x">
+			- Initial release
+		</release>
 	</releases>
-
 </extension>
